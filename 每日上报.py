@@ -33,7 +33,7 @@ for i in range(0, 5):
         driver.execute_script(f'kzl10 = "黑龙江省哈尔滨市南岗区花园街道哈尔滨工业大学西苑小区"')
         driver.execute_script(f'kzl38 = "黑龙江省"')
         driver.execute_script(f'kzl39 = "哈尔滨市"')
-        driver.execute_script(f'kzl39 = "南岗区"')
+        driver.execute_script(f'kzl40 = "南岗区"')
         driver.execute_script('document.getElementById("txfscheckbox").click()')
         driver.find_element_by_class_name('submit').click()
         success = True

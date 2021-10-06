@@ -15,6 +15,9 @@ driver = webdriver.Chrome(executable_path= '/usr/bin/chromedriver', options = op
 USERNAME = os.environ['ID']
 PASSWORD = os.environ['PASSWORD']
 
+# USERNAME=""
+# PASSWORD=""
+
 print('正在上报')
 driver.get('https://ids.hit.edu.cn/authserver/')
 driver.find_element_by_id('mobileUsername').send_keys(USERNAME)
@@ -37,6 +40,8 @@ for i in range(0, 5):
         driver.execute_script(f'kzl39 = "哈尔滨市"')
         driver.execute_script(f'kzl40 = "南岗区"')
         driver.execute_script('document.getElementById("txfscheckbox").click()')
+        driver.execute_script('document.getElementById("txfscheckbox1").click()')
+        driver.execute_script('document.getElementById("txfscheckbox2").click()')
         driver.find_element_by_class_name('submit').click()
         success = True
         break

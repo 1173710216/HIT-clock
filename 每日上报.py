@@ -28,7 +28,7 @@ success = False
 
 for i in range(0, 5):
     try:
-        driver.get('https://xg.hit.edu.cn/zhxy-xgzs/xg_mobile/xsMrsbNew/index')
+        driver.get('https://xg.hit.edu.cn/zhxy-xgzs/xg_mobile/xsMrsbNew/edit')
         driver.execute_script(f'gpsjd = 126.633353')
         driver.execute_script(f'gpswd = 45.74274')
         driver.execute_script(f'kzl6 = "黑龙江省"')

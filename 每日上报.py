@@ -11,7 +11,7 @@ option = webdriver.ChromeOptions()
 option.headless = True
 option.add_argument('user-agent=' + ua)
 # driver = webdriver.Chrome(executable_path='D://webdrivers/chromedriver.exe', options=option)
-driver = webdriver.Chrome(executable_path= '/usr/bin/chromedriver', options = option)
+driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver', options=option)
 USERNAME = os.environ['ID']
 PASSWORD = os.environ['PASSWORD']
 

@@ -39,9 +39,10 @@ for i in range(0, 5):
         driver.execute_script(f'kzl38 = "黑龙江省"')
         driver.execute_script(f'kzl39 = "哈尔滨市"')
         driver.execute_script(f'kzl40 = "南岗区"')
-        driver.execute_script('document.getElementById("txfscheckbox").click()')
-        # driver.execute_script('document.getElementById("txfscheckbox1").click()')
-        # driver.execute_script('document.getElementById("txfscheckbox2").click()')
+        # driver.execute_script('document.getElementById("txfscheckbox").click()')
+        driver.execute_script('document.getElementById("txfscheckbox1").click()')
+        driver.execute_script('document.getElementById("txfscheckbox2").click()')
+        driver.execute_script('document.getElementById("txfscheckbox3").click()')
         driver.find_element_by_class_name('submit').click()
         success = True
         break

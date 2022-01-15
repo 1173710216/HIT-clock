@@ -22,7 +22,7 @@ print('正在上报')
 driver.get('https://ids.hit.edu.cn/authserver/')
 driver.find_element_by_id('mobileUsername').send_keys(USERNAME)
 driver.find_element_by_id('mobilePassword').send_keys(PASSWORD)
-driver.find_element_by_id('load').click()
+driver.find_element_by_id('login_submit').click()
 
 success = False
 
@@ -34,8 +34,8 @@ for i in range(0, 5):
         driver.execute_script(f'kzl6 = "黑龙江省"')
         driver.execute_script(f'kzl7 = "哈尔滨市"')
         driver.execute_script(f'kzl8 = "南岗区"')
-        driver.execute_script(f'kzl9 = "工建街9号"')
-        driver.execute_script(f'kzl10 = "黑龙江省哈尔滨市南岗区花园街道哈尔滨工业大学西苑小区"')
+        driver.execute_script(f'kzl9 = "元和街12号"')
+        driver.execute_script(f'kzl10 = "黑龙江省哈尔滨市南岗区花园街道哈尔滨工业大学元和街12号"')
         driver.execute_script(f'kzl38 = "黑龙江省"')
         driver.execute_script(f'kzl39 = "哈尔滨市"')
         driver.execute_script(f'kzl40 = "南岗区"')
